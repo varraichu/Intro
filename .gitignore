@@ -1,6 +1,7 @@
+node_modules
+
 # Nestjs specific
 /dist
-/node_modules
 /build
 /tmp
 
