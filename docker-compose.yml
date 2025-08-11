@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15 # You can specify your desired Postgres version
+    container_name: my_postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: outros # Replace with your desired username
+      POSTGRES_PASSWORD: in_between # Replace with your desired password
+      POSTGRES_DB: intro-db # Replace with your database name
+    ports:
+      - "5432:5432" # Maps container port 5432 to host port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persists data even if the container is removed
+
+volumes:
+  postgres_data: # Defines the named volume
