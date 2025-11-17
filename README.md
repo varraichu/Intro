@@ -13,6 +13,7 @@ npm i -g @nestjs/cli
 
 ## Create nest project
 nest new project-name
+NOTE: this adds a separate .git file so it is tracked separately. Remove the .git file to 
 
 ## Run project
 npm run start
